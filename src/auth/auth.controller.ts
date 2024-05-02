@@ -1,14 +1,14 @@
 import { Body, Controller, Get, Post, Request, UseGuards } from '@nestjs/common';
 import { AuthService } from './auth.service';
-import { UserService } from 'src/user/user.service';
-import { CreateUserDTO } from 'src/user/dto/create-user-dto';
+import { UserService } from '../user/user.service';
+import { CreateUserDTO } from '../user/dto/create-user-dto';
 import { LocalAuthGuard } from './gaurd/local.guard';
 import { JwtAuthGuard } from './gaurd/jwt.guard';
 import { RolesGaurd } from './gaurd/roles.guard';
 import { Roles } from './decorators/roles.decorator';
 import { Role } from './enum/role.enum';
 import { ApiBearerAuth, ApiBody, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { User } from 'src/user/schema/user.schema';
+import { User } from '../user/schema/user.schema';
 
 
 @ApiTags('auth')
