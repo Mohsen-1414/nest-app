@@ -4,8 +4,8 @@ import { Model } from 'mongoose';
 import { Cart, CartDocument } from './schema/cart.schema';
 import { CreateCartItemDto } from './dto/item.dto';
 import { PdfService } from './pdf.services';
-import { Product, ProductDocument } from 'src/product/schema/product.schema';
-import { User, UserDocument } from 'src/user/schema/user.schema';
+import { Product, ProductDocument } from '../product/schema/product.schema';
+import { User, UserDocument } from '../user/schema/user.schema';
 import { CartItem, CartItemDocument } from './schema/cart-item.schema';
 
 @Injectable()

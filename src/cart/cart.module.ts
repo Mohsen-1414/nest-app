@@ -4,8 +4,8 @@ import { CartController } from './cart.controller';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Cart, CartSchema } from './schema/cart.schema';
 import { PdfService } from './pdf.services';
-import { Product, ProductSchema } from 'src/product/schema/product.schema';
-import { User, UserSchema } from 'src/user/schema/user.schema';
+import { Product, ProductSchema } from '../product/schema/product.schema';
+import { User, UserSchema } from '../user/schema/user.schema';
 import { CartItem, CartItemSchema } from './schema/cart-item.schema';
 
 @Module({

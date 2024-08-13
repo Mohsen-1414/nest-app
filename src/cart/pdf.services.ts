@@ -5,7 +5,7 @@ import PDFDocument from 'pdfkit';
 import fs from 'fs';
 import { ProductDocument } from 'src/product/schema/product.schema';
 import { CartDocument } from './schema/cart.schema';
-import { UserDocument } from 'src/user/schema/user.schema';
+import { UserDocument } from '../user/schema/user.schema';
 import { CartItemDocument } from './schema/cart-item.schema';
 
  

@@ -1,6 +1,6 @@
 import {Prop, Schema, SchemaFactory} from '@nestjs/mongoose';
-import {Date, Document, Types} from 'mongoose';
-import { User } from 'src/user/schema/user.schema';
+import {Document, Types} from 'mongoose';
+//import { User } from 'src/user/schema/user.schema';
 
 
 export type ProductDocument = Product & Document ;
@@ -28,7 +28,7 @@ export class Product {
     countInStock: number;
 
     @Prop({ type: Types.ObjectId, ref: 'User' })
-    userId: User
+    userId: string
 
 };
 
